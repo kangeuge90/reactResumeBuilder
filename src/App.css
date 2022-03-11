@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+body,
+html {
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#pdf {
+    /* 96 ppi */
+    height: 1056px;
+    width: 816px;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#header {
+    display: flex;
+    border-bottom: .5px solid lightgray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#header-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 6px;
+    padding-top: 10px;
+    font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+#header-left a {
+    color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header-right a {
+    color: blue;
+}
+
+#header-middle {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto;
+	text-align: center; */
+}
+
+#header-middle h1 {
+    margin: auto;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+
+#header-middle p {
+    margin-top: -4px;
+    color: gray;
+    margin-bottom: 4px;
+    /* padding-right: 40px; */
+}
+
+#header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    padding: 6px;
+    padding-top: 10px;
+    /* margin-left: 40px; */
+    /* padding-left: 40px; */
+    text-align: right;
+    font-size: 14px;
+}
+
+#header-right a {
+    padding-left: 4px;
+}
+
+#header-right i {
+    padding-left: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    padding: 9px 10px 0px 10px;
+    padding-bottom: 0px;
+}
+
+.section-header {
+    border-bottom: 1px solid black;
+    font-size: 22px;
+    font-weight: 500;
+    /* color: rgb(46, 112, 253); */
+}
+
+.header-address {
+    font-size: 12px;
+}
+
+.section-header span {
+    margin-left: 5px;
+}
+
+.summaryParagraph {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.item-header {
+    display: flex;
+    padding-top: 6px;
+}
+
+.item-title {
+    width: 80%;
+    /* color: rgb(12, 55, 247); */
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.item-date {
+    width: 20%;
+    font-size: 12px;
+    color: gray;
+}
+
+.item {
+    font-size: 14px;
+}
+
+.item ul {
+    /* padding: 0; */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.item li {}
+
+#BotBLink {
+    color: blue;
+}
+
+#ReciMeLink {
+    color: blue;
+}
+
+#CardGameLink {
+    color: blue;
+}
+
+.skillsItem {
+    margin: 4px;
+    font-size: 14px;
+}
+
+.skillsItem .item {
+    padding: 0px;
+}
+
+.skillsLabel p {
+    padding: 0px;
 }
